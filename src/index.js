@@ -16,7 +16,7 @@ function BookList() {
 
 const Book = () => {
   return (
-    <article className="book">
+    <article className='book'>
       <Image></Image>
       <Title></Title>
       <Author></Author>
@@ -32,6 +32,10 @@ const Image = () => (
 );
 
 const Title = () => <h1>Rich Dad Poor Dad: What the Rich Teach...</h1>;
-const Author = () => <h4>Robert T. Kiyosaki</h4>;
+const Author = () => (
+  <h4 style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0.25rem' }}>
+    Robert T. Kiyosaki
+  </h4>
+);
 
 ReactDom.render(<BookList></BookList>, document.getElementById('root'));
