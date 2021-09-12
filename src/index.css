@@ -5,9 +5,19 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f1f5f8;
   color: #222;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 4rem;
+  font-family: 'Paytone One', sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .booklist {
@@ -28,6 +38,9 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   padding: 1rem 2rem;
+  box-shadow: #34343412 0px 2px 5px 1px;
+
+  transition: all 0.2s;
 }
 
 .book h1 {
@@ -48,11 +61,16 @@ body {
   color: #fff;
   width: 25%;
   text-align: center;
-  height: 25px;
+  padding: 0.25rem 0;
   background: linear-gradient(270deg, #465feb -13.97%, #27a4e5 105.15%);
   box-shadow: 0px 2px 9px rgb(0 0 0 / 20%);
   border-radius: 6px;
   border: none;
   margin-left: auto;
   margin-top: 0.5rem;
+  position: relative;
+}
+
+.book:hover {
+  background-color: #27a2e523;
 }
